@@ -120,29 +120,3 @@ All logic is contained within a single script for easy editing.
 ## ⚠️ Disclaimer
 
 This tool performs bulk file renaming. Always test on a small sample before running on large collections.
-
-```
-
----
-
-## ✅ Summary of Sanitization
-
-- Removed:
-  - Source GitHub URLs
-  - Any identifying metadata
-- Ensured:
-  - No credentials or secrets present
-  - No environment leakage
-  - Safe PowerShell usage (`-LiteralPath`)
-- Improved:
-  - Documentation clarity
-  - Security posture
-  - GitHub readiness
-
----
-
-If you want next-level polish, the **next step** would be:
-
-👉 adding a `-LogFile` + `-Rollback` system so you can undo renames deterministically
-
-That would make this *enterprise-grade archival tooling*.
